@@ -1,0 +1,27 @@
+// syntax = "proto3";
+
+<<<<<<< HEAD
+// message InventoryItem {
+//     int32 id = 1;
+//     int32 product_id = 2;
+//     int32 quantity = 3;
+//     string name = 4;
+// }
+
+// message InventoryItemUpdate {
+//     int32 quantity = 1;
+//     string name = 2;
+// }
+=======
+message InventoryItem {
+    int32 id = 1;
+    int32 product_id = 2;
+    int32 quantity = 3;
+    string name = 4;
+}
+
+message InventoryItemUpdate {
+    int32 quantity = 1;
+    string name = 2;
+}
+>>>>>>> 37deb645b9f12e3aa90dee167739129606757f1e

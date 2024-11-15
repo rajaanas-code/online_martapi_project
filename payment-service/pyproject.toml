@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "payment-service"
+version = "0.1.0"
+description = ""
+authors = ["Raja Anas Turk <rajaanasturk157@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.111.0"
+uvicorn = "^0.30.1"
+sqlmodel = "^0.0.19"
+aiokafka = "^0.10.0"
+psycopg = {extras = ["binary"], version = "^3.1.19"}
+mailjet-rest = "^1.3.4"
+stripe = "^10.10.0"
+bcrypt = "^4.2.0"
+httpx = "^0.27.2"
+requests = "^2.32.3"
+
+[build-system]
+requires = ["poetry-core"]
+wbuild-backend = "poetry.core.masonry.api"
