@@ -10,7 +10,6 @@ async def get_kafka_producer():
     finally:
         await producer.stop()  
 
-
 def get_session():
     with Session(engine) as session:
         yield session

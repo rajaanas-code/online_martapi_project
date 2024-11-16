@@ -13,10 +13,6 @@ def get_current_user(token: Annotated[str | None, Depends(oauth2_scheme)]):
     headers = {"Authorization": f"Bearer {token}"}
 
     response = get(url, headers=headers)
-<<<<<<< HEAD
-
-=======
->>>>>>> 37deb645b9f12e3aa90dee167739129606757f1e
     if response.status_code == 200:
         user_data = response.json()
         return user_data
@@ -42,13 +38,5 @@ LoginForAccessTokenDep = Annotated[dict, Depends(get_login_for_access_token)]
 def admin_required(current_user: Annotated[Dict[str, Any], Depends(get_current_user)]):
     print("Current User Data:", current_user)
     if current_user.get("role") != "admin":
-<<<<<<< HEAD
         raise HTTPException(status_code=403, detail="Admin Privileges Required")
-=======
-<<<<<<<< HEAD:order-service/app/authentication/auth.py
-        raise HTTPException(status_code=403, detail="Admin Privileges Required")
-========
-        raise HTTPException(status_code=403, detail="zAdmin privileges required")
->>>>>>>> 37deb645b9f12e3aa90dee167739129606757f1e:inventory-service/app/authentication/auth.py
->>>>>>> 37deb645b9f12e3aa90dee167739129606757f1e
     return current_user

@@ -13,11 +13,7 @@ from app.settings import STRIPE_API_KEY
 from app.deps import get_kafka_producer, get_session
 from app.models.payment_model import Payment, PaymentCreate, PaymentUpdate
 from app.authentication.auth import get_current_user, get_login_for_access_token, admin_required
-<<<<<<< HEAD
 from app.crud.payment_crud import create_payment, get_payment, update_payment_status, get_payment_intent_status
-=======
-from app.crud.payment_crud import create_payment, get_payment, payment_status_update, get_payment_intent_status
->>>>>>> 37deb645b9f12e3aa90dee167739129606757f1e
  
 stripe.api_key = STRIPE_API_KEY
 

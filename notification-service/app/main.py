@@ -7,7 +7,6 @@ import asyncio
 
 from app.notification_db import engine
 from app.notification_producer import get_session
-# from app.send_email import send_email_notification
 from app.notification_consumer import consume_messages
 from app.models.notification_model import Notification, NotificationUpdate
 from app.authentication.auth import get_current_user, admin_required, LoginForAccessTokenDep

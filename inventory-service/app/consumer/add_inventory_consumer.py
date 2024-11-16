@@ -1,4 +1,3 @@
-# consumer/add_inventory_consumer.py
 from app.crud.inventory_crud import add_new_inventory_item
 from app.models.inventory_model import InventoryItem
 from app.inventory_producer import get_session
