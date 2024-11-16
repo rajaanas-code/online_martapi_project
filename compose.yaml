@@ -1,6 +1,5 @@
 ###################    Microservices    ###################
 services:
-###################     Microservices    ###################
   user-service:
     build:
       context: ./user-service

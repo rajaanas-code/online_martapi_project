@@ -1,28 +1,5 @@
 // syntax = "proto3";
 
-<<<<<<< HEAD
-// message Product {
-//     int32 id = 1;
-//     string name = 2;
-//     string description = 3;
-//     float price  = 4;
-//     int32 quantity = 5;
-// }
-
-// message ProductCreate {
-//     string name = 1;
-//     string description = 2;
-//     float price = 3;
-//     int32 quantity = 4; 
-// }
-
-// message ProductUpdate {
-//     string name = 1;
-//     string description = 2;
-//     float price = 3;
-//     int32 quantity = 4; 
-// }
-=======
 message Product {
     int32 id = 1;
     string name = 2;
@@ -44,4 +21,3 @@ message ProductUpdate {
     float price = 3;
     int32 quantity = 4; 
 }
->>>>>>> 37deb645b9f12e3aa90dee167739129606757f1e
