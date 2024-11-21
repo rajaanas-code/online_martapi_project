@@ -27,15 +27,15 @@ async def lifespan(app: FastAPI)-> AsyncGenerator[None, None]:
     yield
 
 app = FastAPI(
-    lifespan=lifespan, 
     title="Welcome To User Service",
     description="Online Mart API",
+    lifespan=lifespan, 
     version="0.0.1"
 )
 
 @app.get("/")
 def read_root():
-    return {"message": "This is User Service"}
+    return {"message": "User Service"}
 
 @app.get("/test")
 def test(current_user: Annotated[User, Depends(current_user)]):

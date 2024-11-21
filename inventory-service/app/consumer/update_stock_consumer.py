@@ -1,4 +1,4 @@
-from app.stock_update import update_stock_in_inventory
+from app.consumer.stock_update import update_stock_in_inventory
 from aiokafka import AIOKafkaConsumer
 import json
 

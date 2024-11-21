@@ -24,15 +24,15 @@ async def lifespan(app: FastAPI)-> AsyncGenerator[None, None]:
 
 
 app = FastAPI(
-    lifespan=lifespan, 
     title="Welcome to Notification Service", 
     description="Online Mart API", 
+    lifespan=lifespan, 
     version="0.0.1",
 )
 
 @app.get("/")
 def read_root():
-    return {"message": "This is Notification Service"}
+    return {"message": "Notification Service"}
 
 @app.post("/auth/login")
 def login(token:LoginForAccessTokenDep):

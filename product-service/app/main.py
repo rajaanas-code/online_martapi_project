@@ -26,15 +26,15 @@ async def lifespan(app: FastAPI)-> AsyncGenerator[None, None]:
     yield
 
 app = FastAPI(
-    lifespan=lifespan, 
     title="Welcome To Product Service",
     description="Online Mart API", 
+    lifespan=lifespan, 
     version="0.0.1",
 )
 
 @app.get("/")
 def read_root():
-    return {"message": "This is Product Service"}
+    return {"message": "Product Service"}
 
 @app.post("/auth/login")
 def login(token:LoginForAccessTokenDep):
